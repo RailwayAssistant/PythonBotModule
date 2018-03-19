@@ -1,2 +1,5 @@
-__pycache__/
+[aliases]
+deleted = log --diff-filter=D --summary
 pid
+__pycache__/
+flask.log
