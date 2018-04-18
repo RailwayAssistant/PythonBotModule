@@ -19,13 +19,15 @@ We're currently using Railway API in order to perform actions related to Indian 
 ### Setting up server
 
 ###### Clone the repository
-`git clone https://github.com/RailwayAssistant/PythonBotModule.git`
-`cd RailwayAssistant`
+
+- `git clone https://github.com/RailwayAssistant/PythonBotModule.git`
+- `cd RailwayAssistant`
 
 ###### Setup Python 3 Virtual Environment
-`pip install pipenv`
-`pipenv --three`
-`pipenv install`
+
+- `pip install pipenv`
+- `pipenv --three`
+- `pipenv install`
 
 ###### Running the server
 
@@ -39,7 +41,7 @@ For example, sending request to `0.0.0.0/?q=Hi` would respond with `How are you 
 
 ### More about the important files
 
-`server.py` contains the flask server which manages ChatterBot and RailwayAPI.
-`bot.py` contains ChatterBot logics which is used to Train and then Consume the knowledge.
-`db.sqlite3` contains the knowledge base or training data for the bot.
-`Pipfile` and `Pipfile.lock` contains dependencies and locking informations which is used by Pipenv.
+- `server.py` contains the flask server which manages ChatterBot and RailwayAPI.
+- `bot.py` contains ChatterBot logics which is used to Train and then Consume the knowledge.
+- `db.sqlite3` contains the knowledge base or training data for the bot.
+- `Pipfile` and `Pipfile.lock` contains dependencies and locking informations which is used by Pipenv.
