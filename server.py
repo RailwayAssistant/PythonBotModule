@@ -22,7 +22,6 @@ def related_to_railway(response):
             for x in response.split():
                 if x.isnumeric() and len(x) == 10:
                     PNR = x
-                    print(x)
                     break
         else:
             PNR = response[4:]
@@ -34,7 +33,6 @@ def related_to_railway(response):
             else:
                 try:
                     response = response.json()
-                    print(response)
                     if response['response_code'] == 200:
                         details_to_return = []
                         passengers = response['passengers']
