@@ -10,9 +10,9 @@ application = Flask(__name__)
 #API_KEY = os.environ.get('RAAPIKEY')
 
 # Sample Dates
-YDate = '18-04-2018'
-TDate = '19-04-2018'
-TMDate = '20-04-2018'
+YDate = '19-04-2018'
+TDate = '20-04-2018'
+TMDate = '21-04-2018'
 
 def related_to_railway(response):
     response = response.lower()
