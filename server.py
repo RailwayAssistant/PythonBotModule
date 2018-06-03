@@ -11,10 +11,11 @@ application = Flask(__name__)
 
 #API_KEY = os.environ.get('RAAPIKEY')
 
+
 # Current Dates
-Today =dt.utcnow() + timedelta(minutes=30, hours=5)
-Yesterday = Today - timedelta(day=1)
-Tomorrow = Today + timedelta(day=1)
+Today = dt.utcnow() + timedelta(minutes=30, hours=5)
+Yesterday = Today - timedelta(days=1)
+Tomorrow = Today + timedelta(days=1)
 
 YDate = Yesterday.strftime('%d-%m-%Y')
 TDate = Today.strftime('%d-%m-%Y')
