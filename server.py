@@ -1,6 +1,8 @@
 from flask import Flask, request
 import logging
 from logging.handlers import RotatingFileHandler
+from datetime import datetime as dt
+from datetime import timedelta
 import requests
 import bot
 import os
@@ -9,10 +11,14 @@ application = Flask(__name__)
 
 #API_KEY = os.environ.get('RAAPIKEY')
 
-# Sample Dates
-YDate = '04-05-2018'
-TDate = '05-05-2018'
-TMDate = '06-05-2018'
+# Current Dates
+Today =dt.utcnow() + timedelta(minutes=30, hours=5)
+Yesterday = Today - timedelta(day=1)
+Tomorrow = Today + timedelta(day=1)
+
+YDate = Yesterday.strftime('%d-%m-%Y')
+TDate = Today.strftime('%d-%m-%Y')
+TMDate = Tomorrow.strftime('%d-%m-%Y')
 
 def related_to_railway(response):
     response = response.lower()
